@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#120433">
+  <title>AFROBIZ UNIVERSAL</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="ABU FREELANCE FORFAIT VERSO~1.jpg" as="image">
+  <link rel="preload" href="484106.jpg" as="image">
+  <link rel="preload" href="83416.jpg" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="img/logo new abu6372.png" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Add this in your <head> -->
+    <link rel="preload" href="styles.css" as="style">
+<link rel="preload" href="scripts.js" as="script">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<style>
+  
+  /* Critical CSS for above-the-fold content */
+  .header, .navbar, .hero-content {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
+  /* Ensure hero content is visible ASAP */
+  .hero-content {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+
+    /* Mobile-First Responsive Design */
+   @media (max-width: 768px) {
+  .services-card {
+    margin: 0 10px; /* Add horizontal spacing */
+    width: calc(100% - 20px); /* Account for margins */
+  }
+  
+  .services-grid {
+    padding: 0 10px; /* Add container padding */
+  }
+      
+      .view-details-button {
+        padding: 8px 12px !important;
+        font-size: 0.9rem !important;
+        margin-top: 10px !important;
+      }
+      
+      /* Portfolio Section - 3x3 Grid */
+      .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+      }
+      
+      .portfolio-overlay {
+        padding: 8px !important;
+      }
+      
+      .portfolio-overlay h3 {
+        font-size: 1rem !important;
+        margin-bottom: 5px !important;
+      }
+      
+      .portfolio-overlay p {
+        font-size: 0.8rem !important;
+        margin-bottom: 8px !important;
+      }
+      
+      /* Header/Navigation Adjustments */
+      .navbar {
+        padding: 15px 5% !important;
+        flex-wrap: wrap;
+      }
+      
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        padding: 20px 0;
+      }
+      
+      .nav-links.active {
+        display: flex;
+      }
+      
+      .nav-links li {
+        width: 100%;
+        text-align: center;
+      }
+      
+      .nav-links li a {
+        display: block;
+        padding: 12px 0;
+      }
+      
+      .menu-toggle {
+        display: block !important;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+      
+      /* Hero Section Adjustments */
+      .hero-content h1 {
+        font-size: 2.8rem !important;
+        top: 30% !important;
+      }
+      
+      .hero-content p {
+        font-size: 1rem !important;
+        padding: 0 10px;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .cta-button {
+        width: 90%;
+        text-align: center;
+        padding: 12px !important;
+      }
+    }
+    
+    /* Tablet adjustments */
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      
+      .portfolio-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+      }
+    }
+    
+    /* Existing styles remain unchanged */
+    /* ... */
+  </style>
+<body>
+  <!-- En-tête -->
+  <header class="header" id="header">
+   <!-- Barre de navigation -->
+   <nav class="navbar">
+     <div class="logo">
+       <img src="logo new abu6372.png" alt="Logo AFROBIZ UNIVERSAL">
+     </div>
+     <ul class="nav-links">
+       <li><a href="#">Accueil</a></li>
+       <li><a href="#services">Services</a></li>
+       <li><a href="#portfolio">Portfolio</a></li>
+       <li><a href="#about">À propos</a></li>
+       <li><a href="#contact">Contact</a></li>
+       <li><a href="#contact" class="cta-button">Demander un devis</a></li>
+       <li><a href="training.html" class="cta-button">Nos formations</a></li>
+     </ul>
+   </nav>
+   <!-- Section Hero -->
+   <div class="hero">
+     <video autoplay muted loop class="hero-video">
+       <source src="abu freelance.mp4" type="video/mp4">
+       Votre navigateur ne supporte pas la balise vidéo.
+     </video>
+     <div class="video-overlay"></div>
+     <div class="hero-content">
+       <!-- Conteneur Texte et Boutons -->
+       <div class="hero-text">
+         <h1>AFROBIZ-UNIVERSAL</h1>
+         <p>CREATEUR DE CONTENU OFFICIEL DE LA DIASPORA</p>
+         <div class="hero-buttons">
+           <a href="video-showcase" class="cta-button">Commencer aujourd'hui</a>
+           <a href="#portfolio" class="cta-button secondary">Voir notre portfolio</a>
+         </div>
+       </div>
+     </div>
+   </div>
+  </header>
+
+  <!-- Section Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>NOS SERVICES</h2>
+      <p class="subtitle">NOUS FAISONS TOUJOURS MIEUX</p>
+      <div class="services-grid">
+        <!-- Carte Service 1 : Montage Vidéo -->
+        <div class="service-card" style="background-image: url('484106.jpg');">
+          <div class="service-overlay"></div>
+          <h3>MONTAGE VIDEO</h3>
+          <p>NOUS CRÉONS DES VIDÉOS 2D ET 3D.</p>
+          <a href="#video-showcase" class="view-details-button">Voir détails</a>
+        </div>
+        
+        <!-- Carte Service 2 : Graphisme -->
+        <div class="service-card" style="background-image: url('71505.jpg');">
+          <div class="service-overlay"></div>
+          <h3>GRAPHISME</h3>
+          <p>CRÉATIONS GRAPHIQUES PROFESSIONNELLES.</p>
+          <a href="#portfolio" class="view-details-button">Voir détails</a>
+        </div>
+        
+        <!-- Carte Service 3 : Marketing Digital -->
+        <div class="service-card" style="background-image: url('83416.jpg');">
+          <div class="service-overlay"></div>
+          <h3>MARKETING DIGITAL</h3>
+          <p>STRATÉGIES DE MARKETING SUR MESURE.</p>
+          <a href="#webdesign" class="view-details-button">Voir détails</a>
+        </div>
+        
+        <!-- Carte Service 4 : Développement Web -->
+        <div class="service-card" style="background-image: url('27722.jpg');">
+          <div class="service-overlay"></div>
+          <h3>WEB DESIGN</h3>
+          <p>CRÉATION DE SITES WEB MODERNES.</p>
+          <a href="#webdesign" class="view-details-button">Voir détails</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <h2>Présentation en Vidéo</h2>
+    <div class="video-container">
+      <video autoplay muted loop playsinline>
+        <source src="abu freelance.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
+    </div>
+  </section>
+
+  <!-- Section Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2>Notre Portfolio</h2>
+      <p class="subtitle">Découvrez nos derniers projets</p>
+      <div class="portfolio-grid">
+        <!-- Projet 1 -->
+        <div class="portfolio-item">
+          <a href="img/amis sincere~2.jpg" data-lightbox="portfolio-gallery" data-title="Animation 2D pour une startup technologique">
+            <img src="img/amis sincere~2.jpg" alt="Projet 1">
+          </a>
+          <div class="portfolio-overlay">
+            <h3>FLYER ASSOCIATION</h3>
+            <p>EUROPE</p>
+          </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="portfolio-item">
+          <a href="project2.jpg" data-lightbox="portfolio-gallery" data-title="Modélisation 3D pour une entreprise de jeux">
+            <img src="img/CINEMA ENFANT~1.jpg" alt="Projet 2">
+          </a>
+          <div class="portfolio-overlay">
+            <h3>FLYER CINEMA</h3>
+            <p>EUROPE</p>
+          </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="portfolio-item">
+          <a href="project3.jpg" data-lightbox="portfolio-gallery" data-title="Design graphique pour une marque de mode">
+            <img src="img/FLYER SUNDAY 1080~1.jpg" alt="Projet 3">
+          </a>
+          <div class="portfolio-overlay">
+            <h3>FLYER CONCERT</h3>
+            <p>EUROPE</p>
+          </div>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="portfolio-item">
+          <a href="project4.jpg" data-lightbox="portfolio-gallery" data-title="Développement web pour une agence de voyage">
+            <img src="img/flyer livraison~2.jpg" alt="Projet 4">
+          </a>
+          <div class="portfolio-overlay">
+            <h3>FLYER ENTREPRISE</h3>
+            <p>CAMEROUN</p>
+          </div>
+        </div>
+
+        <!-- Projet 5 -->
+        <div class="portfolio-item">
+          <a href="project5.jpg" data-lightbox="portfolio-gallery" data-title="Marketing digital pour une application de livraison de nourriture">
+            <img src="img/FLYER QG LOUNGE copie~1.jpg" alt="Projet 5">
+          </a>
+          <div class="portfolio-overlay">
+            <h3>FLYER ENTREPRISE</h3>
+            <p>EUROPE</p>
+          </div>
+        </div>
+
+        <!-- Projet 6 -->
+        <div class="portfolio-item">
+          <a href="project6.jpg" data-lightbox="portfolio-gallery" data-title="Montage vidéo pour une marque de fitness">
+            <img src="img/KILIMANDJARO BONNE SEMAINE 13 tv.jpg" alt="Projet 6">
+          </a>
+          <div class="portfolio-overlay">
+            <h3>FLYER AGENCE IMMIGRATION</h3>
+            <p>CAMEROUN</p>
+          </div>
+        </div>
+
+        <!-- Projet 7 -->
+        <div class="portfolio-item">
+          <a href="project6.jpg" data-lightbox="portfolio-gallery" data-title="Montage vidéo pour une marque de fitness">
+            <img src="img/FLYER CHARGEUR DM.jpg" alt="Projet 7">
+          </a>
+          <div class="portfolio-overlay">
+            <h3>FLYER ENTREPRISE</h3>
+            <p>CAMEROUN</p>
+          </div>
+        </div>
+
+        <!-- Projet 8 -->
+        <div class="portfolio-item">
+          <a href="project7.jpg" data-lightbox="portfolio-gallery" data-title="Montage vidéo pour une marque de fitness">
+            <img src="img/FLYER HOTEL 2.jpg" alt="Projet 8">
+          </a>
+          <div class="portfolio-overlay">
+            <h3>FLYER ENTREPRISE</h3>
+            <p>CAMEROUN</p>
+          </div>
+        </div>
+
+        <!-- Projet 9 -->
+        <div class="portfolio-item">
+          <a href="project8.jpg" data-lightbox="portfolio-gallery" data-title="Montage vidéo pour une marque de fitness">
+            <img src="img/PROMO SOLANGE.jpg" alt="Projet 9">
+          </a>
+          <div class="portfolio-overlay">
+            <h3>FLYER COSMÉTIQUE</h3>
+            <p>EUROPE</p>
+          </div>
+        </div>
+
+        <!-- Projet 10 -->
+        <div class="portfolio-item">
+          <a href="project8.jpg" data-lightbox="portfolio-gallery" data-title="Montage vidéo pour une marque de fitness">
+            <img src="img/flyer principal paysage~1.jpg" alt="Projet 10">
+          </a>
+          <div class="portfolio-overlay">
+            <h3>FLYER RELIGION</h3>
+            <p>CAMEROUN</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="video-showcase" id="video-showcase">
+  <div class="container">
+    <h2>Nos Réalisations Vidéo</h2>
+    <p class="subtitle">Découvrez nos spots publicitaires et démonstrations</p>
+    
+    <div class="video-grid">
+      <!-- Vidéo 1 -->
+      <div class="video-item">
+        <video autoplay muted loop playsinline preload="auto" width="100%" style="border-radius: 10px;">
+          <source src="img/SPOT FIRBA 2022.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <h3>SPOT FIRBA 2022</h3>
+      </div>
+
+      <!-- Vidéo 2 -->
+      <div class="video-item">
+        <video autoplay muted loop playsinline preload="auto" width="100%" style="border-radius: 10px;">
+          <source src="img/SPOT ABC DALLAS PAD D.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <h3>SPOT ABC DALLAS</h3>
+      </div>
+<!-- Vidéo 3 -->
+      <div class="video-item">
+        <video autoplay muted loop playsinline preload="auto" width="100%" style="border-radius: 10px;">
+          <source src="img/SPOT FINAL MINPMESA POUR GIZ.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <h3>SPOT FINAL MINPMESA</h3>
+      </div>
+      <!-- Vidéo 2 -->
+      <div class="video-item">
+        <video autoplay muted loop playsinline preload="auto" width="100%" style="border-radius: 10px;">
+          <source src="img/SPOT NUIT EN BLANC 2023 TENOR 1.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <h3>SPOT NUIT EN BLANC 2023 TENOR</h3>
+      </div>
+      <!-- Vidéo 2 -->
+      <div class="video-item">
+        <video autoplay muted loop playsinline preload="auto" width="100%" style="border-radius: 10px;">
+          <source src="img/SPOT FINAL APOTHEOSE NJR PROD 2024.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <h3>SPOT FINAL APOTHEOSE</h3>
+      </div>
+       <!-- Vidéo 2 -->
+      <div class="video-item">
+        <video autoplay muted loop playsinline preload="auto" width="100%" style="border-radius: 10px;">
+          <source src="img/YIMMILINE OK.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <h3>SPOT YIMMILINE</h3>
+      </div>
+      <div class="video-item">
+        <video autoplay muted loop playsinline preload="auto" width="100%" style="border-radius: 10px;">
+          <source src="img/SUCCESFUL BUSINESS OK.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <h3>SPOT SUCCESFUL BUSINESS </h3>
+      </div>
+       <!-- Vidéo 2 -->
+      <div class="video-item">
+        <video autoplay muted loop playsinline preload="auto" width="100%" style="border-radius: 10px;">
+          <source src="img/LAA'KAM~1.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <h3>SPOT laakam</h3>
+      </div>
+      <!-- Ajoutez plus de vidéos si nécessaire -->
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Modal pour la vidéo -->
+  <div id="videoModal" class="video-modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeVideoModal()">&times;</span>
+      <video controls id="modalVideoPlayer">
+        <source src="" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos HTML5.
+      </video>
+    </div>
+  </div>
+  <section class="forfaits-section" id="forfaits">
+    <div class="container">
+      <h1>ABU FREELANCE</h1>
+      <h2>Digitalisation DE VOS SERVICES ET PRODUITS</h2>
+      <p class="subtitle">Transformez votre entreprise en seulement 15 jours</p>
+      
+      <div class="forfait-highlight">
+        <img src="ABU FREELANCE FORFAIT VERSO~1.jpg" alt="Nos forfaits" class="forfait-flyer">
+        <a href="#details-forfaits" class="cta-button pulse">Voir les détails des forfaits</a>
+      </div>
+    </div>
+  </section>
+  <section class="digital-services" id="web-marketing">
+    <div class="container">
+      <h2>Web Design & Digital Marketing</h2>
+      <p class="section-subtitle">Complete digital solutions to boost your online presence</p>
+
+      <div class="services-tabs">
+        <!-- ✅ Tab buttons with data-tab -->
+        <button class="tab-btn active" data-tab="webdesign">Web Design</button>
+        <button class="tab-btn" data-tab="marketing">Digital Marketing</button>
+      </div>
+
+      <div class="services-content">
+        <!-- Web Design Tab -->
+        <div class="tab-content active" id="webdesign">
+          <div class="services-grid">
+            <div class="services-card" data-category="web">
+              <div class="services-icon">
+                <i class="bx bx-code-alt"></i>
+              </div>
+              <h3>Responsive Websites</h3>
+              <p>Mobile-friendly designs that work perfectly on all devices</p>
+              <ul class="services-features">
+                <li>Custom UI/UX Design</li>
+                <li>Fast Loading Speed</li>
+                <li>SEO Optimized</li>
+                <li>CMS Integration</li>
+              </ul>
+            </div>
+            <div class="services-card" data-category="web">
+              <div class="services-icon">
+                <i class="bx bx-cart"></i>
+              </div>
+              <h3>E-Commerce Solutions</h3>
+              <p>Complete online stores to grow your sales</p>
+              <ul class="services-features">
+                <li>Product Management</li>
+                <li>Secure Payment Gateways</li>
+                <li>Inventory System</li>
+                <li>Mobile Shopping</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Marketing Tab -->
+        <div class="tab-content" id="marketing">
+          <div class="services-grid">
+            <div class="services-card" data-category="marketing">
+              <div class="services-icon">
+                <i class="bx bx-line-chart"></i>
+              </div>
+              <h3>SEO Optimization</h3>
+              <p>Rank higher on search engines and get more traffic</p>
+              <ul class="services-features">
+                <li>Keyword Research</li>
+                <li>On-Page Optimization</li>
+                <li>Technical SEO</li>
+                <li>Monthly Reporting</li>
+              </ul>
+            </div>
+            <div class="services-card" data-category="marketing">
+              <div class="services-icon">
+                <i class="bx bxl-facebook-square"></i>
+              </div>
+              <h3>Social Media Marketing</h3>
+              <p>Powerful campaigns to reach your audience</p>
+              <ul class="services-features">
+                <li>Facebook/Instagram Ads</li>
+                <li>Content Strategy</li>
+                <li>Audience Targeting</li>
+                <li>Performance Analytics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        
+      
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="detailed-forfaits" id="details-forfaits">
+    <div class="container">
+      <h2>Découvrez Nos Forfaits Complets</h2>
+      
+      <div class="forfait-grid">
+        <!-- Forfait Classique -->
+        <div class="forfait-card">
+          <h3>FORFAIT CLASSIQUE</h3>
+          <div class="price">9,900 FCFA</div>
+          <ul class="features">
+            <li>Création d'identité visuelle (Logo, Fiver, Roll Up)</li>
+            <li>Digitalisation des TPE/PME (Facebook, Instagram, TikTok)</li>
+            <li>2h de formation prise en main</li>
+            <li>Brand design graphique</li>
+          </ul>
+          <a href="https://wa.me/237697691984?text=Je%20suis%20intéressé%20par%20le%20FORFAIT%20CLASSIQUE%20à%209900F" class="whatsapp-btn">
+            Commander sur WhatsApp
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+  
+        <!-- Forfait Confort -->
+        <div class="forfait-card">
+          <h3>FORFAIT CONFORT</h3>
+          <div class="price">29,900 FCFA</div>
+          <ul class="features">
+            <li>Formation personnels en 5 jours</li>
+            <li>Digitalisation complète (plateformes digitales)</li>
+            <li>Branding + Spot vidéo</li>
+            <li>Création d'un site internet</li>
+          </ul>
+          <a href="https://wa.me/237697691984?text=Je%20suis%20intéressé%20par%20le%20FORFAIT%20CONFORT%20à%2029900F" class="whatsapp-btn">
+            Commander sur WhatsApp
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+  
+        <!-- Forfait Premium -->
+        <div class="forfait-card">
+          <h3>FORFAIT PREMIUM</h3>
+          <div class="price">149,900 FCFA</div>
+          <ul class="features">
+            <li>Création site e-commerce</li>
+            <li>Intégration API paiement électronique</li>
+            <li>Formation personnels en 5 jours</li>
+            <li>Digitalisation complète</li>
+            <li>Branding + Spot vidéo professionnel</li>
+          </ul>
+          <a href="https://wa.me/237697691984?text=Je%20suis%20intéressé%20par%20le%20FORFAIT%20PREMIUM%20à%20149900F" class="whatsapp-btn">
+            Commander sur WhatsApp
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+   <div class="forfait-card">
+          <h3>FORFAIT UNIVERSEL</h3>
+          <div class="price">299,900 FCFA</div>
+          <ul class="features">
+            <li>Création site e-commerce</li>
+            <li>Intégration API paiement électronique</li>
+            <li>Formation personnels en 5 jours</li>
+            <li>Digitalisation complète</li>
+            <li>Branding + Spot vidéo professionnel</li>
+          </ul>
+          <a href="https://wa.me/2376976919841?text=Je%20suis%20intéressé%20par%20le%20FORFAIT%20PREMIUM%20à%20149900F" class="whatsapp-btn">
+            Commander sur WhatsApp
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <!-- Forfait Universel Plus -->
+        <div class="forfait-card">
+          <h3>FORFAIT UNIVERSEL PLUS</h3>
+          <div class="price">599,000 FCFA</div>
+          <ul class="features">
+            <li>Tous services du Forfait Premium</li>
+            <li>Solution complète entreprises</li>
+            <li>Formation avancée</li>
+            <li>Support premium 24/7</li>
+            <li>Campagne marketing incluse</li>
+          </ul>
+          <a href="https://wa.me/237697691984?text=Je%20suis%20intéressé%20par%20le%20FORFAIT%20UNIVERSEL%20PLUS%20à%20599000F" class="whatsapp-btn">
+            Commander sur WhatsApp
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section À propos -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>À propos de nous</h2>
+      <p class="subtitle">Créer des histoires à travers la créativité</p>
+      <div class="about-content">
+        <!-- Info entreprise et image -->
+        <div class="about-info">
+          <div class="about-text">
+            <h3>Qui sommes-nous</h3>
+            <p>
+              Chez Afrobiz-Universal, nous sommes passionnés par la transformation des idées en chefs-d'œuvre visuels. 
+              Avec plus de 10 ans d'expérience dans le montage vidéo, le graphisme, le marketing digital 
+              et le développement web, nous aidons les entreprises à raconter leur histoire de la manière la plus convaincante.
+            </p>
+            <p>
+              Notre équipe de professionnels créatifs est dédiée à fournir des solutions innovantes 
+              et de haute qualité qui donnent des résultats. Qu'il s'agisse d'une animation 2D époustouflante, d'une 
+              identité de marque captivante ou d'une campagne marketing basée sur les données, nous avons ce qu'il vous faut.
+            </p>
+            <a href="#contact" class="cta-button">Nous contacter</a>
+          </div>
+          <div class="about-image">
+            <img src="83416.jpg" alt="Illustration À propos">
+          </div>
+        </div>
+<!-- Section Promo Formations -->
+<section class="training-promo">
+  <h2>Formez-vous au digital dès aujourd'hui</h2>
+  <p>Rejoignez nos formations en graphisme, montage vidéo et marketing digital pour transformer votre avenir professionnel.</p>
+  <a href="training.html" class="btn-training">Découvrir les formations</a>
+</section>
+
+        <!-- Membres de l'équipe -->
+        <div class="team-members">
+          <h3>Notre équipe</h3>
+          <div class="team-grid">
+            <!-- Membre 1 -->
+            <div class="team-member">
+              <img src="M FOSSO (1 of 33).jpg" alt="Membre équipe 1">
+              <h4>ORLUS FOSSO</h4>
+              <p>PDG Afrobiz-Universal</p>
+            </div>
+
+            <!-- Membre 2 -->
+            <div class="team-member">
+              <img src="Shoot-16.jpg" alt="Membre équipe 2">
+              <h4>CASSANDRA FOSSO</h4>
+              <p>DIRECTRICE GENERALE</p>
+            </div>
+
+            <!-- Membre 3 -->
+            <div class="team-member">
+              <img src="116358.jpg" alt="Membre équipe 3">
+              <h4>EDDIE KATHLEEN</h4>
+              <p>DIRECTRICE ADMISTRATION ET FINANCE</p>
+            </div>
+
+            <!-- Membre 4 -->
+            <div class="team-member">
+              <img src="CARAVANE FOUMBAN (3 of 7).jpg" alt="Membre équipe 4">
+              <h4>STEVE DJILO</h4>
+              <p>TECHNICIEN AUDIOVISUEL</p>
+            </div>
+            <!-- Membre 5 -->
+            <div class="team-member">
+              <img src="yves-3.jpg" alt="Membre équipe 5">
+              <h4>CELESTIN YVONDO</h4>
+              <p>TECHNICIEN AUDIOVISUEL</p>
+            </div>
+            <!-- Membre 6 -->
+            <div class="team-member">
+              <img src="RRRR.png" alt="Membre équipe 6">
+              <h4>FRANKY FOSSI</h4>
+              <p>TECHNICIEN AUDIOVISUEL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Logos Section -->
+<section class="partners-section">
+  <div class="container">
+    <h2 class="section-title">Nos Partenaires</h2>
+    <div class="partners-logos">
+      <img src="img/LOGO TEINT PARFAIT PNG.png" alt="Partenaire 1" />
+      <img src="img/LOGO ASPCO NEW.png" alt="Partenaire 2" />
+      <img src="img/logo uj.jpg" alt="Partenaire 3" />
+      <img src="img/SPE_Orange PNG LOGO.png" alt="Partenaire 4" />
+      <img src="img/Prestige Logo PNG.png" alt="Partenaire 5" />
+      <img src="img/logo departmobile.jpg" alt="Partenaire 6" />
+    </div>
+  </div>
+</section>
+
+  <!-- Section Appel à l'action -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Prêt à élever votre marque ?</h2>
+      <p class="subtitle">Créons quelque chose d'extraordinaire ensemble. Contactez-nous dès aujourd'hui !</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="cta-button">Nous contacter</a>
+        <a href="#contact" class="cta-button secondary">Demander un devis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Témoignages -->
+ <!-- <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>Témoignages</h2>
+      <p class="subtitle">Ce que disent nos clients satisfaits</p>
+      <div class="testimonials-wrapper">
+        <div class="testimonials-carousel">
+           Témoignage 1 
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"Afrobiz Universal a transformé notre marque avec des visuels époustouflants et un site web convivial. Hautement recommandé !"</p>
+              <div class="testimonial-author">
+                <img src="client1.jpg" alt="Client 1">
+                <div class="author-info">
+                  <h4>SOPIE PROD</h4>
+                  <p>CEO, Tech Innovators</p>
+                </div>
+              </div>
+            </div>
+          </div>-->
+
+          <!-- Témoignage 2 
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"L'équipe d'Afrobiz Universal est incroyablement talentueuse. Ils ont livré notre projet à temps et ont dépassé nos attentes."</p>
+              <div class="testimonial-author">
+                <img src="client2.jpg" alt="Client 2">
+                <div class="author-info">
+                  <h4>UJ COMMUNICATION</h4>
+                  <p>Fondateur, Creative Solutions</p>
+                </div>
+              </div>
+            </div>
+          </div>-->
+
+          <!-- Témoignage 3
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"Leurs stratégies de marketing digital ont considérablement boosté notre présence en ligne. Excellent travail !"</p>
+              <div class="testimonial-author">
+                <img src="client3.jpg" alt="Client 3">
+                <div class="author-info">
+                  <h4>TEINT PARFAIT</h4>
+                  <p>Directeur Marketing, Global Brands</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Témoignage 4 
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"Le travail de montage vidéo était excellent. Nos vidéos promotionnelles sont devenues virales !"</p>
+              <div class="testimonial-author">
+                <img src="client4.jpg" alt="Client 4">
+                <div class="author-info">
+                  <h4>MAELYA</h4>
+                  <p>Directeur Créatif, MediaWorks</p>
+                </div>
+              </div>
+            </div>
+          </div>-->
+
+          <!-- Témoignage 5 
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"Afrobiz Universal a créé une identité de marque époustouflante pour nous. Leurs designs sont exceptionnels !"</p>
+              <div class="testimonial-author">
+                <img src="client5.jpg" alt="Client 5">
+                <div class="author-info">
+                  <h4>PRESTIGE</h4>
+                  <p>Fondateur, Design Studio</p>
+                </div>
+              </div>
+            </div>
+          </div>-->
+
+          <!-- Témoignage 6 
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"Leur équipe de développement web a construit un site responsive et convivial pour nous. Très professionnel !"</p>
+              <div class="testimonial-author">
+                <img src="client6.jpg" alt="Client 6">
+                <div class="author-info">
+                  <h4>DR CELESTIN</h4>
+                  <p>CEO, Travel Experts</p>
+                </div>
+              </div>
+            </div>
+          </div>-->
+
+          <!-- Témoignage 7 -->
+         <!--  <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"L'équipe d'Afrobiz Universal est créative, professionnelle et un plaisir à travailler avec. Hautement recommandé !"</p>
+              <div class="testimonial-author">
+                <img src="client7.jpg" alt="Client 7">
+                <div class="author-info">
+                  <h4>SIGNATURE</h4>
+                  <p>Fondateur, GreenTech</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+  <section class="testimonials-slider">
+    <h2>Ils nous font confiance 💬</h2>
+    <div class="slider-wrapper">
+        <div class="slider-track">
+            <div class="testimonial-card">
+  
+              <div>
+                "L'équipe d'Afrobiz Universal est créative, professionnelle et un plaisir à travailler avec. Hautement recommandé !" 
+                <br><span>— TEINT PARFAIT</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              
+              <div>
+                "Afrobiz Universal a créé une identité de marque époustouflante pour nous. Leurs designs sont exceptionnels !" 
+                <br><span>— SOPIE PROD</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              
+              <div>
+                "Afrobiz Universal a créé une identité de marque époustouflante pour nous. Leurs designs sont exceptionnels !" 
+                <br><span>— UJ COMMUNICATION</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              
+              <div>
+                "Le travail de montage vidéo était excellent. Nos vidéos promotionnelles sont devenues virales !" 
+                <br><span>— PRESTIGE EVENTS</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              
+              <div>
+                "Leurs stratégies de marketing digital ont considérablement boosté notre présence en ligne. Excellent travail !" 
+                <br><span>— DEPART MOBILE</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              
+              <div>
+                "L'équipe d'Afrobiz Universal est incroyablement talentueuse. Ils ont livré notre projet à temps et ont dépassé nos attentes." 
+                <br><span>— HADASSAH</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              
+              <div>
+                ""Afrobiz Universal a transformé notre marque avec des visuels époustouflants et un site web convivial. Hautement recommandé !" 
+                <br><span>— NJR PRODUCTION</span>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+  </section>
+  <!-- Section Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <p class="subtitle">Créons ensemble quelque chose d'extraordinaire</p>
+      <div class="contact-content">
+        <!-- Formulaire de contact -->
+        <!-- Update your contact form section -->
+<div class="contact-form">
+  <form id="contactForm">
+    <div class="form-group">
+      <input type="text" name="name" id="contactName" placeholder="Votre nom" required>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" id="contactEmail" placeholder="Votre email" required>
+    </div>
+    <div class="form-group">
+      <input type="text" name="subject" id="contactSubject" placeholder="Sujet" required>
+    </div>
+    <div class="form-group">
+      <textarea name="message" id="contactMessage" placeholder="Votre message" rows="5" required></textarea>
+    </div>
+    <button type="button" class="cta-button" onclick="sendToWhatsApp()">Envoyer le message</button>
+  </form>
+</div>
+
+        <!-- Coordonnées -->
+        <div class="contact-details">
+          <h3>Nos coordonnées</h3>
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p>abugroup10@gmail.com</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <p>+237 697 691 984</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>CAMEROUN BAFOUSSAM</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+             <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Info entreprise -->
+        <div class="footer-col">
+          <div class="logo">
+            <img src="logo new abu6372.png" alt="Logo AFROBIZ UNIVERSAL" class="logo">
+          </div>
+          <p class="footer-text">Transformer les idées en chefs-d'œuvre visuels depuis 2016</p>
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Liens rapides -->
+        <div class="footer-col">
+          <h4>Liens rapides</h4>
+          <ul class="footer-links">
+            <li><a href="#header">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Info contact -->
+        <div class="footer-col">
+          <h4>Contactez-nous</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i>CAMEROUN, BAFOUSSAM,IMMEUBLE CAPLAMI,</li>
+            <li><i class="fas fa-map-marker-alt"></i>CANADA, TORONTO</li>
+            <li><i class="fas fa-map-marker-alt"></i>FRANCE, PARIS</li>
+            <li><i class="fas fa-phone"></i>+237 697691984</li>
+            <li><i class="fas fa-envelope"></i>abugroup10@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <p>&copy; 2016 AFROBIZ UNIVERSAL. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Indicateur de défilement (Optionnel) -->
+  <div class="scroll-indicator">
+    <span></span>
+    <div class="arrow"></div>
+  </div>
+
+  <!-- Popup Publicitaire 1 -->
+  <div class="popup-overlay" id="popupOverlay1">
+    <div class="popup-content">
+      <span class="popup-close" onclick="hidePopup(1)">&times;</span>
+      <img src="img/flyer support de com copie.jpg" alt="Affiche publicitaire" class="popup-poster">
+    </div>
+  </div>
+
+  <!--Popup Publicitaire 2 
+  <div class="popup-overlay" id="popupOverlay2">
+    <div class="popup-content">
+      <span class="popup-close" onclick="hidePopup(2)">&times;</span>
+      <img src="img/promoavril abu~1.jpg" alt="Affiche publicitaire" class="popup-poster">
+    </div>
+  </div>
+
+  
+  <div class="popup-overlay" id="popupOverlay3">
+    <div class="popup-content">
+      <span class="popup-close" onclick="hidePopup(3)">&times;</span>
+      <img src="abu freelance flyer~1.jpg" alt="Affiche publicitaire" class="popup-poster">
+    </div>
+  </div>
+
+  
+  <div class="popup-overlay" id="popupOverlay4">
+    <div class="popup-content">
+      <span class="popup-close" onclick="hidePopup(4)">&times;</span>
+      <video autoplay muted loop playsinline class="popup-video">
+        <source src="img/VIDEO PROMO.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la balise vidéo.
+      </video>
+    </div>
+  </div>-->
+
+  <div id="popup" style="display: none;">
+    <p>Ceci est une publicité popup !</p>
+    <button id="closePopupBtn">Fermer</button>
+  </div>
+  <script src="scripts.js"></script>
+  
+</body>
+</html>
